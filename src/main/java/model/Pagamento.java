@@ -11,7 +11,7 @@ public class Pagamento {
 
         @Override
         public String toString() {
-            return "Pagamentos{" +
+            return "Pagamento{" +
                     "date=" + date +
                     ", valor=" + valor +
                     ", id=" + id +
