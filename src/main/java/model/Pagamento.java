@@ -2,11 +2,23 @@ package model;
 
 import java.util.Date;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+@Entity
+@Table(name = "Tabela-Pagamento")
 public class Pagamento {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 
 
         private Date date;
+        @Column (name = "Data-Pagamento")
         private float valor;
+        @Column(name = "Valor-Pagamento")
         private long id;
 
         @Override
@@ -42,4 +54,5 @@ public class Pagamento {
             this.id = id;
         }
     }
+
 
